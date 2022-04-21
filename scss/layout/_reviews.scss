@@ -1,0 +1,49 @@
+/* Reviews */
+.reviews {
+    grid-area: reviews;
+    flex-direction: column;
+
+    .review {
+        --spacer: 2rem;
+        max-width: 22rem;
+        height: 100%;
+    
+        margin-inline: auto;
+        padding-inline: var(--spacer);
+    
+        border-radius: var(--br);
+    }
+    
+    .profile {
+        padding-top: var(--spacer);
+    
+        &__img {
+            width: 3rem;
+            border-radius: 50%;
+        }
+    
+        &__body {
+            --flow-space: .2rem;
+        }
+    }
+
+    .blockquote {
+        margin: 0;
+        padding-block: var(--spacer);
+    }
+
+    @include md('medium') {
+        flex-direction: row;
+
+        .review {
+            &:nth-child(2) {
+                transform: translateY(1rem);
+            }
+            
+            &:nth-child(3) {
+                transform: translateY(2rem);
+            }
+        }
+        
+    }
+}

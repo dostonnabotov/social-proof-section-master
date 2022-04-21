@@ -1,0 +1,25 @@
+/* Header */
+.header {
+    grid-area: header;
+    --flow-space: 0.5rem;
+
+    &__title,
+    &__subtitle {
+        text-align: center;
+    }
+    
+    &__subtitle {
+        margin-inline: auto;
+    }
+
+    @include md('medium'){
+        &__title,
+        &__subtitle {
+            text-align: left;
+        }
+        
+        &__subtitle {
+            margin-inline: 0;
+        }
+    }
+}

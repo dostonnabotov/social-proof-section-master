@@ -1,0 +1,38 @@
+/***************
+    Reset
+****************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+p {
+    max-width: 40ch;
+}

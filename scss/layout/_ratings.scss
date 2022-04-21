@@ -1,0 +1,37 @@
+/* Ratings */
+.ratings {
+    grid-area: ratings;
+
+    .rating {
+        width: min(100%, 25rem);
+        flex-direction: column;
+    
+        margin-inline: auto;
+        padding: 1rem 1.5rem;
+    
+        border-radius: var(--br);
+
+        &__img {
+            padding: .5rem 50px;
+            background-image: url('/images/icon-star.svg');
+            background-repeat: space;
+        }
+    }
+
+    @include md('medium') {
+        --flow-space: 1rem;
+        
+        .rating {
+            flex-direction: row;
+
+            &:nth-child(1) {
+                transform: translateX(-3rem);
+            }
+            
+            &:nth-child(3) {
+                transform: translateX(3rem);
+            }
+        }
+    }
+}
+

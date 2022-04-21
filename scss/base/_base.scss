@@ -1,0 +1,26 @@
+/***************
+    Main
+****************/
+body {
+    display: grid;
+    place-items: center;
+
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+
+    background-color: var(--clr-neutral-100);
+}
+
+.main {
+    grid-template-areas:
+        'header'
+        'ratings'
+        'reviews';
+    
+    @include md('medium') {
+        grid-template-columns: 3fr 4fr;
+        grid-template-areas: 
+            'header ratings'
+            'reviews reviews';
+    }
+}
