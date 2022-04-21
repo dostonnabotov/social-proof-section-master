@@ -65,7 +65,10 @@ body {
   place-items: center;
   font-family: var(--ff-body);
   font-size: var(--fs-400);
-  background-color: var(--clr-neutral-100);
+  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bgern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: max(50%, 400px);
 }
 
 .main {
