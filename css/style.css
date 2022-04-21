@@ -184,7 +184,7 @@ body {
 }
 .ratings .rating__img {
   padding: 0.5rem 50px;
-  background-image: url("/images/icon-star.svg");
+  background-image: url("../images/icon-star.svg");
   background-repeat: space;
 }
 @media (min-width: 60em) {
